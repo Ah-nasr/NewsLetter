@@ -20,11 +20,7 @@ app.post("/", function(req,res)
     const lastname = req.body.lastname;
     const email = req.body.email;
 
-    // res.write("<h1> My first name: "+ firstname+ "</h1>")
-    // res.write("<h1> My last name: "+ lastname+ "</h1>")
-    // res.write("<h1> My email: "+ email+ "</h1>")
-    // res.send()
-
+    
 
                        
     const url = "https://us11.api.mailchimp.com/3.0/lists/76f0ee8f78/members";
@@ -39,7 +35,7 @@ app.post("/", function(req,res)
 
     const options = {
         method: "POST",
-        auth: "Nasr:7cd6b3e5d2acc0363cee311ed21f9ee4-us11",
+        auth: "Nasr:13375df3df096bda3b656ab56a04c28f-us11",
         headers: {
             "Content-Type": "application/json"
         }
